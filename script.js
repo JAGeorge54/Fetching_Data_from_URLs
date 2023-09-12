@@ -48,6 +48,8 @@ Instructions:
     urlArray.forEach(async (url) => {
       makeRequest(url).then(function (result) {
         // STEP 1: Store `result` inside the variable dataArray, this is required to pass this exercise
+        dataArray.push(result);
+      if (dataArray.length == urlArray.length) {
         // STEP 2: Loop through each item in the `dataArray` and use the logic below by uncommenting the code to see if it is the correct weather data for `Lisbon`
         // You will need to change the itemInDataArray variable to match your own variable that stores the current item in array that you are checking
         // STEP 3: Return dataArray
