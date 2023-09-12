@@ -51,7 +51,11 @@ Instructions:
         dataArray.push(result);
       if (dataArray.length == urlArray.length) {
         // STEP 2: Loop through each item in the `dataArray` and use the logic below by uncommenting the code to see if it is the correct weather data for `Lisbon`
+        dataArray.forEach((item) => {
+            if (JSON.parse(item).name == 'Lisbon') {
         // You will need to change the itemInDataArray variable to match your own variable that stores the current item in array that you are checking
+            }
+        });
         // STEP 3: Return dataArray
       });
     });
