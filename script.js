@@ -57,6 +57,7 @@ Instructions:
             }
         });
         // STEP 3: Return dataArray
+        return dataArray;
       });
     });
   })();
