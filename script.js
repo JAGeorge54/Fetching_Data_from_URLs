@@ -54,6 +54,8 @@ Instructions:
         dataArray.forEach((item) => {
             if (JSON.parse(item).name == 'Lisbon') {
         // You will need to change the itemInDataArray variable to match your own variable that stores the current item in array that you are checking
+        addLisbonDataToDocument(item, dataArray);    
+    
             }
         });
         // STEP 3: Return dataArray
